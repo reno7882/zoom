@@ -363,6 +363,11 @@ export default class App extends Component {
             </p>
           </div>
         </footer>
+        <script
+      type="text/javascript"
+      src="https://graficos.gruporeforma.com/wp-includes/js/iframeResizer.contentWindow.min.js"
+      defer
+    ></script>
       </div>
     );
   }
