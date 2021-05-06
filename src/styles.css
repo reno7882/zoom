@@ -287,3 +287,7 @@ button {
   max-height: 400px;
   object-fit: cover;
 }
+
+.TransformComponent-module_content__TZU5O, .TransformComponent-module_container__3NwNd{
+  width: unset !important;
+}

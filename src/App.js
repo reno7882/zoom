@@ -3,7 +3,6 @@ import { TransformComponent, TransformWrapper } from "react-zoom-pan-pinch";
 import zoom_in from "./images/zoom-in.svg";
 import zoom_out from "./images/zoom-out.svg";
 import zoom_reset from "./images/zoom-reset.svg";
-import example_img from "./images/example.jpg";
 
 export default class App extends Component {
   state = {
@@ -127,66 +126,29 @@ export default class App extends Component {
                       <div className="element">
                         {type ? (
                           <TransformComponent>
-                            <img
-                              className="zoom"
-                              src={example_img}
-                              alt="example-element"
-                            />
+  <iframe style={{ height: '100vh', border: "none" }} title="iframe"  src="https://graficos.gruporeforma.com/infogram-san-pedro"  
+  
+  width="100%"   ></iframe>
+
                           </TransformComponent>
                         ) : (
                           <TransformComponent>
-                            <div className="example-text">
-                              <h1>Lorem ipsum</h1>
-                              <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur. Excepteur sint
-                                occaecat cupidatat non proident, sunt in culpa
-                                qui officia deserunt mollit anim id est laborum.
-                              </p>
-                              <h1>SVG</h1>
-                              <div>
-                                <svg width="200px" height="200px">
-                                  <g transform="translate(100, 100) scale( 1 )">
-                                    <circle
-                                      r="50px"
-                                      vectorEffect="non-scaling-stroke"
-                                    />
-                                  </g>
-                                  <g transform="translate(100, 100) scale( 0.5 )">
-                                    <circle
-                                      r="50px"
-                                      vectorEffect="non-scaling-stroke"
-                                    />
-                                  </g>
-                                  <g transform="translate(100, 100) scale( 1.8 )">
-                                    <circle
-                                      r="50px"
-                                      vectorEffect="non-scaling-stroke"
-                                    />
-                                  </g>
-                                </svg>
-                              </div>
-                              <h1>Button</h1>
-                              <button
-                                type="button"
-                                onClick={() =>
-                                  alert("You can use nested buttons!")
-                                }
-                                className="btn-3d red small"
-                              >
-                                Show alert!
-                              </button>
-                            </div>
+                
+
+  <iframe style={{ height: '100vh', border: "none" }} title="iframe2"  src="https://graficos.gruporeforma.com/gubernatura/?"  
+  
+  width="100%"   ></iframe>
+ 
+
+
+
+                              
+                  
+
                           </TransformComponent>
                         )}
                       </div>
-                      <div className="info">
+                      <div style={{ display: 'none' }} className="info">
                         <h3>State</h3>
                         <h5>
                           <span className="badge badge-secondary">
@@ -203,7 +165,7 @@ export default class App extends Component {
                           </span>
                         </h5>
                       </div>
-                      <div className="functions">
+                      <div style={{ display: 'none' }}  className="functions">
                         <h3>Functions</h3>
                         <h6>
                           <button
@@ -349,7 +311,7 @@ export default class App extends Component {
         </section>
 
         {/* Footer */}
-        <footer className="py-5 bg-black">
+        <footer style={{ display: 'none' }} className="py-5 bg-black">
           <div className="container">
             <p className="m-0 text-center text-white small">
               MIT LICENSE ©{" "}
