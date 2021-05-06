@@ -49,27 +49,7 @@ export default class App extends Component {
     } = this.state;
     return (
       <div className="body">
-        {/* Header */}
-        <header className="masthead text-center text-white">
-          <div className="masthead-content">
-            <div className="container">
-              <div className="logo">
-                <img src={logo} alt="" />
-              </div>
-            </div>
-          </div>
-          <a
-            href="https://github.com/prc5/react-zoom-pan-pinch/"
-            className="learn btn btn-primary btn-xl rounded-pill mt-5"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn More
-          </a>
-          <div className="bg-circle-1 bg-circle" />
-          <div className="bg-circle-2 bg-circle" />
-          <div className="bg-circle-3 bg-circle" />
-        </header>
+
         <section>
           <br />
           <br />
