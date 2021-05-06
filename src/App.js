@@ -90,7 +90,7 @@ export default class App extends Component {
                   }) => (
                     <React.Fragment>
                       <div className="tools">
-                        <button
+                        <button style={{ display: 'none' }}
                           className="btn-gradient yellow small btn-type"
                           data-testid="toggle-button"
                           onClick={() => {
@@ -126,16 +126,15 @@ export default class App extends Component {
                       <div className="element">
                         {type ? (
                           <TransformComponent>
-  <iframe style={{ height: '100vh', border: "none" }} title="iframe"  src="https://graficos.gruporeforma.com/infogram-san-pedro"  
-  
-  width="100%"   ></iframe>
+                            <iframe src="https://e.infogram.com/_/T6aQtmtPhZqWLJOaRjOM?src=embed" title="VOTO_NL_ABRIL_GOBER" width="100%" height="500"  frameborder="0" style={{ height: '500', border: "none" }} allowfullscreen="allowfullscreen"></iframe>
+
 
                           </TransformComponent>
                         ) : (
                           <TransformComponent>
-                
+                <iframe src="https://e.infogram.com/_/zkPx8g8Elnd4t4QjXYbf?src=embed" title="VOTO_NL_MONTERREY" width="640" height="4235" scrolling="no" frameborder="0" style={{ height: '100vh', border: "none" }} allowfullscreen="allowfullscreen"></iframe>
 
-  <iframe style={{ height: '100vh', border: "none" }} title="iframe2"  src="https://graficos.gruporeforma.com/gubernatura/?"  
+  <iframe style={{ height: '100vh', border: "none" }} title="iframe2"  src="https://graficos.gruporeforma.com/gubernatura"  
   
   width="100%"   ></iframe>
  
@@ -165,7 +164,7 @@ export default class App extends Component {
                           </span>
                         </h5>
                       </div>
-                      <div style={{ display: 'none' }}  className="functions">
+                      <div  className="functions">
                         <h3>Functions</h3>
                         <h6>
                           <button
