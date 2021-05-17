@@ -26,6 +26,8 @@ export default class App extends Component {
   toggleSetting = type => {
     this.setState(p => ({ [type]: !p[type] }));
   };
+  
+
 
   render() {
     const {
@@ -115,13 +117,7 @@ export default class App extends Component {
                         >
                           <img src={zoom_out} alt="" />
                         </button>
-                        <button
-                          className="btn-gradient blue small"
-                          onClick={positionY}
-                          data-testid="zoom-out-button"
-                        >
-                          <img src={zoom_out} alt="" />
-                        </button>
+
                         <button
                           className="btn-gradient purple small"
                           onClick={resetTransform}
@@ -133,9 +129,14 @@ export default class App extends Component {
                       <div className="element">
                         
                           <TransformComponent>
-                            
-                            <div className="free dragscroll"  style={{ width: '100%', border: "none" }}>
-                            <iframe sandbox   src="https://e.infogram.com/_/T6aQtmtPhZqWLJOaRjOM?src=embed" title="VOTO_NL_ABRIL_GOBER" width="100%" height="500"  frameborder="0" style={{ height: '500', border: "none", pointerEvents: "none"}} allowfullscreen="allowfullscreen"></iframe>
+   
+                            <div className="free dragscroll"  style={{ width: '100%', border: "none", pointerEvents: "none" }}>
+
+                            <iframe height="10000px" src="https://e.infogram.com/_/T6aQtmtPhZqWLJOaRjOM?src=embed" title="VOTO_NL_ABRIL_GOBER" width="100%"   frameborder="0" style={{border: "none"}} allowfullscreen="allowfullscreen"></iframe>
+
+               
+   
+      
 </div>
 
                           </TransformComponent>
