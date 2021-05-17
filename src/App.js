@@ -116,6 +116,13 @@ export default class App extends Component {
                           <img src={zoom_out} alt="" />
                         </button>
                         <button
+                          className="btn-gradient blue small"
+                          onClick={positionY}
+                          data-testid="zoom-out-button"
+                        >
+                          <img src={zoom_out} alt="" />
+                        </button>
+                        <button
                           className="btn-gradient purple small"
                           onClick={resetTransform}
                           data-testid="reset-button"
@@ -124,30 +131,17 @@ export default class App extends Component {
                         </button>
                       </div>
                       <div className="element">
-                        {type ? (
+                        
                           <TransformComponent>
-                            <iframe src="https://e.infogram.com/_/T6aQtmtPhZqWLJOaRjOM?src=embed" title="VOTO_NL_ABRIL_GOBER" width="100%" height="500"  frameborder="0" style={{ height: '500', border: "none" }} allowfullscreen="allowfullscreen"></iframe>
-
+                            
+                            <div className="free dragscroll"  style={{ width: '100%', border: "none" }}>
+                            <iframe sandbox   src="https://e.infogram.com/_/T6aQtmtPhZqWLJOaRjOM?src=embed" title="VOTO_NL_ABRIL_GOBER" width="100%" height="500"  frameborder="0" style={{ height: '500', border: "none", pointerEvents: "none"}} allowfullscreen="allowfullscreen"></iframe>
+</div>
 
                           </TransformComponent>
-                        ) : (
-                          <TransformComponent>
-                <iframe src="https://e.infogram.com/_/zkPx8g8Elnd4t4QjXYbf?src=embed" title="VOTO_NL_MONTERREY" width="640" height="4235" scrolling="no" frameborder="0" style={{ height: '100vh', border: "none" }} allowfullscreen="allowfullscreen"></iframe>
-
-  <iframe style={{ height: '100vh', border: "none" }} title="iframe2"  src="https://graficos.gruporeforma.com/gubernatura"  
-  
-  width="100%"   ></iframe>
- 
-
-
-
-                              
-                  
-
-                          </TransformComponent>
-                        )}
+                      
                       </div>
-                      <div style={{ display: 'none' }} className="info">
+                      <div  className="info">
                         <h3>State</h3>
                         <h5>
                           <span className="badge badge-secondary">
